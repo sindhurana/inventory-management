@@ -1,0 +1,30 @@
+<h1 class="mt-5 mb-4"> Update Product</h1>
+
+
+<form action="/update" method="post">
+    <div class="form-row">
+        <input type="hidden" class="form-control" id="id" name="id" value="<%=product.id%>">
+
+        <div class="form-group">
+            <label for="name">Product Name</label>
+            <input type="text" class="form-control" id="name" name="name" value="<%=product.name%>">
+        </div>
+        <div class="form-group">
+            <label for="desc">Product Description</label>
+            <input type="text" class="form-control" id="desc" name="desc" value="<%=product.desc%>">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="price">Price</label>
+                <input type="number" class="form-control" id="price" name="price" value="<%=product.price%>">
+            </div>
+
+            <div class="form-group col-md-2">
+                <label for="imageURL">Image URL</label>
+                <input type="url" class="form-control" id="imageURL" name="imageURL" value="<%=product.imageUrl%>">
+            </div>
+
+            <div>
+                <button type="submit" class="btn btn-primary">Update Product</button>
+            </div>
+        </div>
